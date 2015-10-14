@@ -17,19 +17,6 @@ module Example
     enable :sessions
     register Sinatra::Auth::Oauthed
 
-    # These are the settings for authentication redirects
-    #
-    # Probably don't change them?
-    get '/redirect_to' do
-      authenticate!
-      "Hello There, #{user.name}! return_to is working!"
-    end
-
-    get '/auth/oauthed/callback' do
-      authenticate!
-      redirect '/'
-    end
-
     get '/logout' do
       logout!
       'Peace!'
@@ -50,6 +37,7 @@ module Example
     get '/' do
       authenticate!
       @user = oauthed_user
+      # @organization_id = oauthed_user.organization_id
       # You can make requests to the API and set them on instance variables to
       # render on the page. Include the path, get a response
       @req = oauthed_raw_request('me')
