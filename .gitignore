@@ -2,7 +2,6 @@ coverage
 .bundle
 pkg
 .DS_Store
-Gemfile.lock
 vendor/gems
 *.gem
 .rbenv-version
