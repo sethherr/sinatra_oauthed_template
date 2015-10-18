@@ -12,7 +12,7 @@ gem 'haml'
 gem 'warden', '~> 1.2.3'
 gem 'oauth2', '~> 0.5.2'
 gem 'warden-oauthed'
-gem 'sinatra_auth_oauthed', path: '../sinatra_auth_oauthed'
+gem 'sinatra_auth_oauthed'
 
 
 # Environmental variable configuration
