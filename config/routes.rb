@@ -15,6 +15,7 @@ module Example
       end
     end
     enable :sessions
+    set :session_secret, ENV['SESSION_KEY']
     register Sinatra::Auth::Oauthed
 
     get '/logout' do

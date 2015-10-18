@@ -17,7 +17,7 @@
     "APPLICATION_SCOPES_REQUESTED": "public",
     "OAUTH_BASE_URL": "OAuth provider base url. REQUIRED",
     "API_BASE_URL": "API Base url - ALSO REQUIRED",
-    "OAUTHED_VERIFIER_SECRET": "Something random",
+    "SESSION_KEY": "Something random and long",
     "USER_ATTRIBUTES": "id full_name email"
   }
 }
