@@ -18,20 +18,6 @@ gem 'sinatra_auth_oauthed'
 # Environmental variable configuration
 gem 'dotenv', '~> 2.0.2'
 
-# Asset pipeline
-gem 'sinatra-asset-pipeline', '~> 0.7.0'
-gem 'uglifier'
-gem 'slim'
-gem 'sass'
-gem 'coffee-script'
-
-# Bower packages block!!
-source 'https://rails-assets.org' do
-  # Add your package to below this
-  gem 'rails-assets-jquery'
-  gem 'rails-assets-bootstrap'
-end
-
 group :development do
   gem 'rerun'
 end
