@@ -20,14 +20,17 @@ A template application for building mini web sites/services authenticated with O
 
 ## Env Values
 
-The `.env` file references the app you are using. You will need to create an app on the provider you're using.
+The `.env` file defines information about the service you are connecting to. The `.env` file is gitignored, because you shouldn't commit secrets to Github! There is a sample file at `.env-sample` - move it or copy it to `.env` to get it to work.
 
 The callback url for this sinatra template is `localhost:9292/auth/oauthed/callback` - change localhost:9292 to reflect your local conditions - e.g., if you're running on a different port, or if you deploy this to something with a domain name. You will have to add this to the application on the provider.
 
-After you've created an application on the provider, add the client id and the client secret of it to the `.env` file.
+After you've created an application on the provider, add the client id (`APPLICATION_CLIENT_ID`) and the client secret (`APPLICATION_CLIENT_SECRET`) of it to the `.env` file.
 
-For the `APPLICATION_SCOPES_REQUESTED`, separate scopes with whitespace
-For `USER_ATTRIBUTES`, separate values with whitespace
+Update the `OAUTH_BASE_URL` to the url of the service (e.g. [https://bikeindex.org](https://bikeindex.org)). Add the `API_BASE_URL` as well (e.g. [https://bikeindex.org/api/v2](https://bikeindex.org/api/v2))
+
+For the `APPLICATION_SCOPES_REQUESTED`, separate scopes with whitespace.
+
+For `USER_ATTRIBUTES`, separate values with whitespace. This is the values that come along with the user after sign in. You can get more information about the user by selecting them afterward.
 
 ## Directories / files
 

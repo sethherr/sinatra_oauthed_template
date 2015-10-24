@@ -2,10 +2,19 @@ coverage
 .bundle
 pkg
 .DS_Store
+
+# Ignore those gems
 vendor/gems
 *.gem
-.rbenv-version
 bin/
-tags
-.ruby-*
+
+# Ignore tmp files
 .sass-cache
+tags
+
+# Ignore ruby version manager stuff
+.rbenv-version
+.ruby-*
+
+# Ignore .env, because secrets
+.env
