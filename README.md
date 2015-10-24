@@ -13,9 +13,10 @@ A template application for building mini web sites/services authenticated with O
 1. Fork or clone this repository
 2. Update the values in [.env](.env) with [your values](#env-values)
 3. Go to the directory this is contained in the terminal
-4. Use `rerun rackup` to start the server 
-5. The above command will print out something like `WEBrick::HTTPServer#start: pid=62447 port=9292`. Go to localhost:{that_port_number} - e.g. [http://localhost:9292](http://localhost:9292). 
-6. Go there to the above url to see the app! :sparkles:
+4. `bundle install`
+5. Use `rerun rackup` to start the server 
+6. The above command will print out something like `WEBrick::HTTPServer#start: pid=62447 port=9292`. Go to localhost:{that_port_number} - e.g. [http://localhost:9292](http://localhost:9292). 
+7. Go there to the above url to see the app! :sparkles:
 
 ## Env Values
 
